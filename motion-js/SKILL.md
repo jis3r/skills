@@ -10,7 +10,7 @@ Implement Motion in plain JavaScript for DOM and SVG animation. Use this skill f
 ## Workflow
 
 1. Confirm runtime context.
-- Identify one of: npm/bundler imports, ESM CDN imports, or CMS/embed environment.
+- Identify one of: npm/bundler imports or CMS/embed environment with locally bundled assets.
 - Identify target elements and desired behavior: one-shot, gesture-driven, scroll-driven, or continuous.
 
 2. Select the smallest runtime that still meets requirements.

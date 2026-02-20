@@ -12,19 +12,13 @@ npm install motion
 import { animate, inView, scroll } from "motion"
 ```
 
-### ESM CDN
-
-```js
-import { animate, inView, scroll } from "https://cdn.jsdelivr.net/npm/motion/+esm"
-```
-
-Use this path for static sites or no-build environments.
+Avoid runtime CDN imports for production when supply-chain policy requires verifiable dependencies.
 
 ## CMS and Builder Embeds
 
-- Squarespace: place Motion ESM imports in Code Injection or page-level script blocks.
-- Webflow: add Motion ESM scripts in custom code embeds; ensure target elements exist before init.
-- WordPress: enqueue a module script in theme/plugin and initialize after DOM ready.
+- Squarespace: bundle Motion in your build pipeline and inject the built asset.
+- Webflow: ship a built JS bundle as a static asset and initialize after DOM content is present.
+- WordPress: install `motion` in your theme/plugin toolchain, build locally, enqueue the bundled file.
 
 In all environments, scope selectors tightly to avoid animating editor/admin UI elements.
 
