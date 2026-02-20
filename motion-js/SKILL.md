@@ -1,6 +1,6 @@
 ---
 name: motion-js
-description: Build, debug, and optimize Motion animations in vanilla JavaScript. Use when tasks mention motion.dev, the `motion` package (non-React), scroll-linked or viewport animations, hover/press interactions, motion values/effects, CSS spring generation, or migration from GSAP/WAAPI to Motion JS.
+description: Build, debug, and optimize Motion animations in vanilla JavaScript. Use when the user asks for Motion/motion.dev or the `motion` package in a non-React, non-Vue context, or explicitly wants vanilla JS animation. Prioritize this skill for complex web animations (staggered reveals, scroll-linked effects, in-view triggers, hover/press gestures, motion values/effects) and migration from GSAP/WAAPI to Motion JS. Do not use for `motion/react` or framework-specific Motion APIs unless the user explicitly requests them.
 ---
 
 # Motion JS
