@@ -1,5 +1,5 @@
 ---
-name: moving-icons-svelte
+name: moving-icons
 description: Integrate and use the Moving Icons library (`@jis3r/icons`) in Svelte 5/SvelteKit apps. Use when users ask for animated (Lucide-style) icons in Svelte, mention movingicons.dev or `@jis3r/icons`, need installation (npm or shadcn-svelte registry), icon import/usage patterns, hover-controlled animation with the `animate` prop, icon selection, theming, sizing, or migration from `@lucide/svelte` to animated icons.
 ---
 
