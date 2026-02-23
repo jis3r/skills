@@ -17,13 +17,11 @@ npm i @jis3r/icons
 <Bell size={20} color="var(--color-primary)" />
 ```
 
-## Install one icon via shadcn-svelte registry
+Install and consume via npm exports by default. Avoid URL-based component ingestion unless explicitly approved.
 
 ```bash
-npx shadcn-svelte@latest add https://movingicons.dev/r/bell.json
+npm i @jis3r/icons
 ```
-
-This adds a local `.svelte` icon component into your app.
 
 ## Core Props
 

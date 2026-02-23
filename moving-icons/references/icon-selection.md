@@ -10,7 +10,7 @@ The library follows Lucide-style names:
 ## Practical Selection Process
 
 1. Start with semantic intent (alert, success, navigation, data, settings).
-2. Search movingicons.dev by name/tag/category.
+2. Search your project's available `@jis3r/icons` exports by name/category intent.
 3. Test at real UI sizes (16, 20, 24) with your stroke width.
 4. Keep one icon style per feature area for consistency.
 

@@ -1,6 +1,6 @@
 ---
 name: moving-icons
-description: Integrate and use the Moving Icons library (`@jis3r/icons`) in Svelte 5/SvelteKit apps. Use when users ask for animated (Lucide-style) icons in Svelte, mention movingicons.dev or `@jis3r/icons`, need installation (npm or shadcn-svelte registry), icon import/usage patterns, hover-controlled animation with the `animate` prop, icon selection, theming, sizing, or migration from `@lucide/svelte` to animated icons.
+description: Integrate and use the Moving Icons library (`@jis3r/icons`) in Svelte 5/SvelteKit apps. Use when users ask for animated (Lucide-style) icons in Svelte, mention `@jis3r/icons` or moving icons, icon import/usage patterns, hover-controlled animation with the `animate` prop, icon selection, theming, sizing, or migration from `@lucide/svelte` to animated icons.
 ---
 
 # Moving Icons
@@ -11,8 +11,7 @@ This skill helps to integrate animated icons into Svelte/SvelteKit apps and cons
 Use this skill when the user:
 
 - Asks to add animated icons in a Svelte or SvelteKit interface
-- Mentions `@jis3r/icons`, movingicons.dev, or "moving icons"
-- Needs install/setup help via npm or shadcn-svelte registry commands
+- Mentions "animated icons", "moving icons" or `@jis3r/icons`
 - Needs icon import and usage help (PascalCase imports, props, theming, sizing)
 - Wants hover/focus/selected-state animation patterns using the `animate` prop
 - Wants to migrate from `@lucide/svelte` to animated icons with minimal UI regressions
@@ -21,8 +20,7 @@ Use this skill when the user:
 
 1. Confirm integration path.
 - `npm`: install package and import named components.
-- `shadcn-svelte registry`: add single icons as local component files.
-- direct copy: paste component source from movingicons.dev if needed.
+- Prefer package imports instead of URL-fetched component payloads.
 
 2. Implement icon usage with stable defaults.
 - Use PascalCase imports from `@jis3r/icons`.
@@ -43,6 +41,7 @@ Use this skill when the user:
 
 - Do not suggest editing `@jis3r/icons` source unless explicitly requested.
 - Prefer consuming exported components over copied raw files.
+- Do not ingest remote component source/registry payloads unless the user explicitly requests it and confirms trust.
 - Keep animation purposeful (feedback/affordance), not constant distraction.
 - Use icon names that match Lucide naming conventions.
 
