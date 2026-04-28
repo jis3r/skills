@@ -1,0 +1,23 @@
+{
+  "skill_name": "pr-draft",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a PR description for my current branch against origin/main. The diff adds a feature-flagged model selector to Copilot and includes backend tests. Keep it concise and mention risks.",
+      "expected_output": "A concise PR draft using Summary, What changed, Why, and Notes, with no generic AI wording and no unnecessary validation section unless commands are known.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "write a pull request body for this bugfix: users can pick a model mode in the UI, but async defaults were overwriting it before submit. I ran eslint and typecheck.",
+      "expected_output": "A short bugfix PR description using Problem, Why this approach, Technical changes, and Risks / edge cases, plus compact validation because commands are known.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "draft a GitHub PR description from this summary only: add supplier export CSV, new endpoint, frontend button, no tests yet. make it not sound AI generated.",
+      "expected_output": "A very concise PR draft that sticks to the provided summary, mentions no tests were run, and avoids invented context.",
+      "files": []
+    }
+  ]
+}
